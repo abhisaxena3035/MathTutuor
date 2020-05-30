@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MathTutor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MathHelper helps with whatever field of math you have an interest in">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>MathTutor</h1>
+		</header>
+		<nav id="home">
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+				<li><a href="{{ url_for('algebra') }}">Algebra</a></li>
+				<li><a href="{{ url_for('geometery') }}">Geometery</a></li>
+				<li><a href="{{ url_for('calculus') }}">Calculus</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Help With All Your Math Questions</h2>
+			<img src="{{url_for('static',filename='math.png')}}"/>
+			<p>MathTutor goes in depth in your course that you are taking in high school. Tutorials for different kinds of problems as well as definitions for the important terms. </p>
+			<ul>
+				<li>Explanation of problems in Algebra</li>
+				<li>Comprehensive overview of the concepts in Geometery</li>
+				<li>Description of ideas used in Calculus</li>
+				<li>Clear definition of key terminology</li>
+				<li>Step by Step processes on finding a solution</li>
+			</ul>
+		</main>
+		<footer>
+			2020 MathTutor<br><a href="mailto:abhi.saxena3035@gmail.com">abhi.saxena3035@gmail.com</a>
+			<div>
+				<script type="text/javascript">
+					document.write("This page was last modified on: " + document.lastModified +"");
+				</script>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

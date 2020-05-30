@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MathTutor</title>
+<link href="{{ url_for('static', filename='style/style.css') }}" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MathHelper helps with whatever field of math you have an interest in">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>MathTutor</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+				<li><a href="{{ url_for('algebra') }}">Algebra</a></li>
+				<li><a href="{{ url_for('geometery') }}">Geometery</a></li>
+				<li><a href="{{ url_for('calculus') }}">Calculus</a></li>
+			</ul>
+		</nav>
+		<footer>
+			2020 MathTutor<br><a href="mailto:abhi.saxena3035@gmail.com">abhi.saxena3035@gmail.com</a>
+			<div>
+				<script type="text/javascript">
+					document.write("This page was last modified on: " + document.lastModified +"");
+				</script>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

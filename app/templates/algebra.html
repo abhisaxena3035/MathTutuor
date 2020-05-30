@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MathTutor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MathHelper helps with whatever field of math you have an interest in">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>MathTutor</h1>
+		</header>
+		<nav id="home">
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+				<li><a href="{{ url_for('algebra') }}">Algebra</a></li>
+				<li><a href="{{ url_for('geometery') }}">Geometery</a></li>
+				<li><a href="{{ url_for('calculus') }}">Calculus</a></li>
+			</ul>
+		</nav>
+	<main>
+		<div>
+			<h2>Variables</h2>
+			<img src="{{url_for('static',filename='variables.png')}}"/>
+			<ul>
+				<li>Variables are letters or symbols that hold a value</li>
+				<li>Yes, anything can be a variable</li>
+				<li>The main two variables used are x and y</li>
+			</ul>
+		</div>
+		<div>	
+			<h2>Equations</h2>
+			<img src="{{url_for('static',filename='equations.png')}}"/>
+			<ul>
+				<li>Equations are a combination of:
+					<ul>
+						<li>Mathematical Operations and Symbols such as multiplication, addition, and equals sign</li>
+						<li>Variables that we need to solve for</li>
+						<li>Constants, or numbers, that are used to indicate or change value</li>
+					</ul>
+				</li>
+				<li>Most of algebra is getting an equation and figuring out how to solve it</li>
+				<li>If you have to do something to one side of the equation, you have to do it to the other as well</li>
+			</ul>
+		</div>
+		<div>
+			<h2>Problem Solving Steps</h2>
+			<img src="{{url_for('static',filename='solving.png')}}"/>
+			<ul>
+				<li>Isolate the Variable</li>
+					<ul>
+						<li>Add/Subtract constants on the side of the variable to get rid of it</li>
+					</ul>
+				<li>Multiple/Divide to get rid of coefficients (the number in front of a variable. Ex: 2x/2)</li>
+				<li>Get the equation to look like the variable with no coefficeints to equal a single number</li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		2020 MathTutor<br><a href="mailto:abhi.saxena3035@gmail.com">abhi.saxena3035@gmail.com</a>
+		<div>
+			<script type="text/javascript">
+				document.write("This page was last modified on: " + document.lastModified +"");
+			</script>
+		</div>
+	</footer>
+</body>
+</html>

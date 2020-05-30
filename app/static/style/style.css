@@ -1,0 +1,51 @@
+body {background-color: #D5D8DC ; color: #5D6D7E; font-family: Cambria, Georgia, serif;}
+header {background-color: #5D6D7E; color: #D5D8DC; background-image: url("lilyheader.jpg"); background-repeat: no-repeat; height: 150px; background-position: right;}
+h1 {padding-top: 50px; padding-left: 2em;}
+nav {font-weight: bold; padding: 1em; float: left; width: 160px; background-color: #F5F5F5;}
+nav ul {list-style-type: none; padding-left: 0px}
+nav a {text-decoration: none; display: block; text-align: center; font-weight: bold; border-style: outset; border-color: #CCCCCC; border-width: 3px; padding: 1em; margin-bottom: 1em}
+nav a:link {color: #5D6D7E;}
+nav a:visited {color: #85929E}
+nav a:hover {color: #707B7C; border: 3px inset #333333;}
+.studio {font-style: italic;}
+footer {background-color: #5D6D7E; color: #D5D8DC; font-size: 0.60; font-style: italic; text-align: center; padding:1em;}
+main {padding-left: 2em; padding-right: 2em; margin-left: 170px; padding-top: 1em}
+#wrapper {width: 80%; margin-right: auto; margin-left: auto; background-color: #F5F5F5; min-width: 1280px; max-width: 1480px;}
+.floatleft {float: left; margin-right: 4em}
+.clear {clear: both;}
+*{box-sizing: border-box;}
+#mobile {display: none;}
+#desktop {display: inline;}
+@media only screen and (max-width: 1024px) {
+	body {margin: 0px; background-image: none;}
+	#wrapper {width: 100%; min-width: 0px; margin: 0px; padding: 0px;}
+	header {padding-top: 1em;}
+	h1 {padding-top: 1em;}
+	nav {float: none; width: auto; padding-left: : 2em;}
+	nav a {padding: 0.2em; margin-left: 0.3em; float: left; width: 23%}
+	main {margin: 0px; font-size: 90%}
+	#hero img {width: 100%; height: auto;}
+	h2, h3, p, dl {padding-left: 2em; padding-right: 2em}
+	main ul {margin-left: 2em}
+	.floatleft {margin-left: 2em; margin-bottom: 1em}
+	.clear {padding-left: 2em}
+}
+@media only screen and (max-width: 768px) {
+	h1 {font-size: 2em; text-align: center; padding-top: 0.25em; padding-left: 1.5em; width: 85%}
+	nav a {padding: 0.5em; width: 45%; float: left; min-width: 6em; margin-left: 0.5em}
+	main {padding-top: 0px}
+	.floatleft {display: none; float: none;}
+	#hero {display: none;}
+	footer {padding: 0.5em; margin: 0px}
+	#mobile {display: inline;}
+	#desktop {display: none;}
+}
+table {width: 60%; border: 1px solid; border-color: #D5D8DC; margin-left: auto; margin-right: auto; border-collapse: collapse; margin-bottom: 1em}
+td, th {padding: 5px; border: 1px solid; border-color: #D5D8DC}
+.alternate {background-color: #D5D8DC;}
+caption {margin: 1em; font-weight: bold; font-size: 120%}
+label {float: left; display: block; text-align: right; font-weight: bold; width: 10em; padding-right: 1em;}
+input, textarea {display: block; margin-bottom: 2em}
+#mySubmit {margin-left: 12em}
+form {padding: 3em;}
+

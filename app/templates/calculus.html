@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MathTutor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}" >
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MathHelper helps with whatever field of math you have an interest in">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>MathTutor</h1>
+		</header>
+		<nav id="home">
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+				<li><a href="{{ url_for('algebra') }}">Algebra</a></li>
+				<li><a href="{{ url_for('geometery') }}">Geometery</a></li>
+				<li><a href="{{ url_for('calculus') }}">Calculus</a></li>
+			</ul>
+		</nav>
+	<main>
+		<div>	
+			<h2>Derivatives</h2>
+			<img src="{{url_for('static',filename='derivative.png')}}"/>
+			<ul>
+				<li>Derivatives is the graph of a function's slopes at tangent lines</li>
+				<li>Tangent lines touch the graph of the function at exactly one specific point</li>
+				<li>At each point on that function there is a tangent line, and the derivatives is the slope of the tangent line at that x value</li>
+				<li>You can take a derivative of every fucntion that doesn't have a discontinuity or sharp turn</li>
+			</ul>
+		</div>
+		<div>
+			<h2>Integrals</h2>
+			<img src="{{url_for('static',filename='integral.png')}}"/>
+			<ul>
+				<li>Integrals are a symbol to find the area under a curve</li>
+				<li>They can be definite or indefinite</li>
+					<ul>
+						<li>Definite: They have bounds to take the area from where to where</li>
+						<li>Indefinite: You find the equation that finds the area of a function at different bounds </li>
+					</ul>
+				<li>Integrals usually look like a large stretched out 'S' with a function after it</li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		2020 MathTutor<br><a href="mailto:abhi.saxena3035@gmail.com">abhi.saxena3035@gmail.com</a>
+		<div>
+			<script type="text/javascript">
+				document.write("This page was last modified on: " + document.lastModified +"");
+			</script>
+		</div>
+	</footer>
+</body>
+</html>

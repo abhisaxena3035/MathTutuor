@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MathTutor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MathHelper helps with whatever field of math you have an interest in">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>MathTutor</h1>
+		</header>
+		<nav id="home">
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+				<li><a href="{{ url_for('algebra') }}">Algebra</a></li>
+				<li><a href="{{ url_for('geometery') }}">Geometery</a></li>
+				<li><a href="{{ url_for('calculus') }}">Calculus</a></li>
+			</ul>
+		</nav>
+	<main>
+		<div>	
+			<h2>Angles</h2>
+			<img src="{{url_for('static',filename='angle.png')}}"/>
+			<ul>
+				<li>Angles are created with two lines</li>
+				<li>When to lines cross, they cross at an angle</li>
+				<li>Angles are measured in degrees</li>
+				<li>360 degrees make a circle</li>
+			</ul>
+		</div>
+		<div>
+			<h2>Triangles</h2>
+			<img src="{{url_for('static',filename='triangle.png')}}"/>
+			<ul>
+				<li>Triangles are shapes that have three sides</li>
+				<li>Because they have three sides, they have three angles</li>
+				<li>All three angles have to add up to 180 degrees</li>
+			</ul>
+		</div>
+		<div>
+			<h2>Graphing</h2>
+			<img src="{{url_for('static',filename='graph.png')}}"/>
+			<ul>
+				<li>A graph has two parts:</li>
+					<ul>
+						<li>The X-Axis: numbers going from left to right</li>
+						<li>The Y-Axis: numbers going from left to right</li>
+					</ul>
+				<li>An equation is given that you have to graph (Ex: y=2x+6)</li>
+				<li>The equation is always a relationship between an input, usually denoted using x, and the output, usually denoted as y</li>
+				<li>The most important thing to know is the slope of the function</li>
+					<ul>
+						<li>The slope of the function determines how steep the line is</li>
+						<li>The slope is the coeffiecient of the x variable (Ex: Equation: y = 2x+6, Slope = 2)</li>
+					</ul>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		2020 MathTutor<br><a href="mailto:abhi.saxena3035@gmail.com">abhi.saxena3035@gmail.com</a>
+		<div>
+			<script type="text/javascript">
+				document.write("This page was last modified on: " + document.lastModified +"");
+			</script>
+		</div>
+	</footer>
+</body>
+</html>
